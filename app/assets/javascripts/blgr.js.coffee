@@ -3,7 +3,7 @@ window.Blgr =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+  initialize: -> console.log('Hello from Backbone!')
 
 $(document).ready ->
   Blgr.initialize()
