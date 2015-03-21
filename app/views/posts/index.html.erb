@@ -38,3 +38,4 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_post_path,
             :class => 'btn btn-primary' %>
+<%= will_paginate @posts, renderer: BootstrapPagination::Rails %>

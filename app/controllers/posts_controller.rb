@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   respond_to :html
 
   def index
-    @posts = Post.all
+    @posts = Post.paginate(:page => params[:page])
     respond_with(@posts)
   end
 
